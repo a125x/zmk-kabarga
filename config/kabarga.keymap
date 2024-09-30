@@ -22,14 +22,14 @@
         en: en {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(E))) &tog 0>;
+            bindings = <&kp LA(LC(LG(E))) &to 0>;
             label = "EN";
         };
 
         ru: ru {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LA(LC(LG(R))) &tog 2>;
+            bindings = <&kp LA(LC(LG(R))) &to 2>;
             label = "RU";
         };
 
@@ -79,7 +79,7 @@
         ru_first {
             bindings = <
 &none  &none             &kp S               &kp R           &none               &none  &none  &none                &kp V                  &kp M                &none              &none
-&none  &mt LEFT_SHIFT F  &mt LEFT_COMMAND B  &mt LEFT_ALT O  &mt LEFT_CONTROL E  &none  &none  &mt RIGHT_CONTROL Y  &mt RIGHT_ALT N        &mt RIGHT_COMMAND C  &mt RIGHT_SHIFT H  &none
+&none  &mt LEFT_SHIFT F  &mt LEFT_COMMAND B  &mt LEFT_ALT J  &mt LEFT_CONTROL T  &none  &none  &mt RIGHT_CONTROL Y  &mt RIGHT_ALT N        &mt RIGHT_COMMAND C  &mt RIGHT_SHIFT H  &none
 &none  &kp G             &kp U               &kp E           &kp D               &none  &none  &kp K                &kp Z                  &kp P                &kp L              &none
                                              &kp BACKSPACE   &mo 3               &none         &none                &mt RIGHT_SHIFT SPACE  &lt 4 RET
             >;

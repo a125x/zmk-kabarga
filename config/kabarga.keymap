@@ -13,9 +13,21 @@
 #define RSE 2
 #define ADJ 3
 
-&lt { quick_tap_ms = <220>; };
+&lt {
+    quick_tap_ms = <220>;
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-key-positions = <>;
+};
 
-&mt { quick_tap_ms = <220>; };
+&mt {
+    quick_tap_ms = <220>;
+    tapping-term-ms = <280>;
+    flavor = "balanced";
+    require-prior-idle-ms = <150>;
+    hold-trigger-key-positions = <>;
+};
 
 / {
     macros {
@@ -57,7 +69,7 @@
 &none  &none             &kp U               &kp F           &none        &none  &none  &none        &kp G            &kp Y                &none        &none
 &none  &mt LEFT_SHIFT A  &mt LEFT_COMMAND R  &mt LEFT_ALT S  &mt LCTRL T  &none  &none  &mt RCTRL N  &mt RIGHT_ALT E  &mt RIGHT_COMMAND I  &mt RSHFT O  &none
 &none  &kp P             &kp M               &kp C           &kp D        &none  &none  &kp H        &kp L            &kp W                &kp B        &none
-                                             &kt BACKSPACE   &mo 1        &none         &none        &mt LSHFT SPACE  &lt 4 RETURN
+                                             &kt BACKSPACE   &sl 1        &none         &none        &mt LSHFT SPACE  &lt 4 RETURN
             >;
         };
 
@@ -81,16 +93,16 @@
 &none  &none             &kp S               &kp R           &none               &none  &none  &none                &kp V                  &kp M                &none              &none
 &none  &mt LEFT_SHIFT F  &mt LEFT_COMMAND B  &mt LEFT_ALT J  &mt LEFT_CONTROL T  &none  &none  &mt RIGHT_CONTROL Y  &mt RIGHT_ALT N        &mt RIGHT_COMMAND C  &mt RIGHT_SHIFT H  &none
 &none  &kp G             &kp U               &kp E           &kp D               &none  &none  &kp K                &kp Z                  &kp P                &kp L              &none
-                                             &kp BACKSPACE   &mo 3               &none         &none                &mt RIGHT_SHIFT SPACE  &lt 4 RET
+                                             &kp BACKSPACE   &sl 3               &none         &none                &mt RIGHT_SHIFT SPACE  &lt 4 RET
             >;
         };
 
         ru_second {
             bindings = <
-&none  &none        &kp TAB                     &kp ESCAPE             &none               &none  &none  &none                &kp EQUAL             &kp MINUS                    &none              &none
-&none  &mt LSHFT W  &mt LEFT_COMMAND SEMICOLON  &mt LALT LEFT_BRACKET  &mt LEFT_CONTROL X  &none  &none  &mt RIGHT_CONTROL Q  &mt RIGHT_ALT SLASH   &mt RIGHT_COMMAND LS(SLASH)  &mt RIGHT_SHIFT I  &none
-&none  &en          &ru                         &kp BACKSLASH          &kp SQT             &none  &none  &kp O                &kp COMMA             &kp A                        &kp DOT            &none
-                                                &none                  &none               &none         &none                &mt LEFT_SHIFT SPACE  &lt 4 RET
+&none  &none        &kp TAB                     &kp ESCAPE             &none               &none  &none  &none                &kp EQUAL                &kp MINUS                &none              &none
+&none  &mt LSHFT W  &mt LEFT_COMMAND SEMICOLON  &mt LALT LEFT_BRACKET  &mt LEFT_CONTROL X  &none  &none  &mt RIGHT_CONTROL Q  &mt RIGHT_ALT LS(SLASH)  &mt RIGHT_COMMAND SLASH  &mt RIGHT_SHIFT I  &none
+&none  &en          &ru                         &kp BACKSLASH          &kp SQT             &none  &none  &kp O                &kp COMMA                &kp A                    &kp DOT            &none
+                                                &none                  &none               &none         &none                &mt LEFT_SHIFT SPACE     &lt 4 RET
             >;
         };
 

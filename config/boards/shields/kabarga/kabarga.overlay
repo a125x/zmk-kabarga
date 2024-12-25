@@ -10,19 +10,19 @@
         compatible = "pwm-leds";
         pwm_led_0: led_0 {
             pwms = <&pwm0 0 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
-            label = "BAT_LED_NODE_1";
+            label = "LED_NODE_0";
         };
         pwm_led_1: led_1 {
             pwms = <&pwm0 1 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
-            label = "BAT_LED_NODE_2";
+            label = "LED_NODE_1";
         };
         pwm_led_2: led_2 {
-            label = "BAT_LED_NODE_3";
+            label = "LED_NODE_2";
             pwms = <&pwm0 2 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
         };
         pwm_led_3: led_3 {
             pwms = <&pwm0 3 PWM_MSEC(10) PWM_POLARITY_NORMAL>;
-            label = "STATUS_LED_NODE";
+            label = "LED_NODE_3";
         };
     };
 };
@@ -58,4 +58,3 @@
     pinctrl-1 = <&pwm0_sleep>;
     pinctrl-names = "default", "sleep";
 };
-

@@ -70,7 +70,7 @@
 &bootloader     &none             &kp U               &kp F           &none        &none  &none  &none        &kp G            &kp Y                &none        &bootloader
 &bt BT_CLR_ALL  &mt LEFT_SHIFT A  &mt LEFT_COMMAND R  &mt LEFT_ALT S  &mt LCTRL T  &none  &none  &mt RCTRL N  &mt RIGHT_ALT E  &mt RIGHT_COMMAND I  &mt RSHFT O  &bt BT_SEL 0
 &bt BT_PRV      &kp P             &kp M               &kp C           &kp D        &none  &none  &kp H        &kp L            &kp W                &kp B        &bt BT_NXT
-                                                      &kp BACKSPACE   &sl 1        &none         &none        &mt LSHFT SPACE  &lt 4 RETURN
+                                                      &kp BACKSPACE   &sl 1        &none         &lt 4 ENTER  &mt LSHFT SPACE  &none
             >;
         };
 
